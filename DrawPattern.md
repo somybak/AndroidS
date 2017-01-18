@@ -8,7 +8,7 @@
 
 숫자값과 문자를 넣으면 다음과 같이 숫자 층을 가진 삼각형이 출력됨.
 
-<p>
+
 
        X       
       XXX      
@@ -18,7 +18,7 @@
   XXXXXXXXXXX  
  XXXXXXXXXXXXX 
 
-</p>
+
 
 # 작성방식
 
@@ -57,8 +57,6 @@ public void showTri(int count, String unit){
 
 위에서 작성한 삼각형을 토대로 위쪽 부분을 격자 모양인 마름모꼴을 출력
 
-<p>
-
     X     
    X X    
   X X X   
@@ -69,7 +67,6 @@ X X X X X
    XXX    
     X     
 
-</p>
 
 # 작성방식
 
