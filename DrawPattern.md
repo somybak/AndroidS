@@ -8,25 +8,22 @@
 
 숫자값과 문자를 넣으면 다음과 같이 숫자 층을 가진 삼각형이 출력됨.
 
-
-
-       X       
-      XXX      
-     XXXXX     
-    XXXXXXX    
-   XXXXXXXXX   
-  XXXXXXXXXXX  
- XXXXXXXXXXXXX 
-
-
-
+           X       
+          XXX      
+         XXXXX     
+        XXXXXXX  
+       XXXXXXXXX
+      XXXXXXXXXXX
+     XXXXXXXXXXXXX 
+ 
+    
 # 작성방식
 
 1. 먼저 for문으로 숫자값의 행과 숫자값*2의 열을 만듭니다
 
 2. 정 가운데만 문자를 출력하는 if문을 만듭니다.
 
-3. 매 행마다 2.를 기준으로 문자를 하나씩 더 출력하는 if문 작성 
+3. 매 행마다 2.를 기준으로 양 옆으로 문자를 하나씩 더 출력하는 if문 작성 
 
 
 # 코드
@@ -57,15 +54,15 @@ public void showTri(int count, String unit){
 
 위에서 작성한 삼각형을 토대로 위쪽 부분을 격자 모양인 마름모꼴을 출력
 
-    X     
-   X X    
-  X X X   
- X X X X  
-X X X X X 
- XXXXXXX  
-  XXXXX   
-   XXX    
-    X     
+          X
+         X X 
+        X X X 
+       X X X X
+      X X X X X 
+       XXXXXXX
+        XXXXX
+         XXX    
+          X   
 
 
 # 작성방식
@@ -74,7 +71,7 @@ X X X X X
 
 2. 숫자값보다 큰 행(아래 반 쪽)을 출력하는 if문 작성
 
-3. 위 반쪽에서 홀수 행은 홀수 열만 짝수 행에서는 짝수 행만 출력하는 if문 작성 
+3. 위 반쪽에서 홀수 행은 홀수 열만 짝수 행에서는 짝수 열만 출력하는 if문 작성 
 
 
 # 코드
