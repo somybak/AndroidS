@@ -1,0 +1,74 @@
+﻿
+
+
+
+
+
+5. 온라인으로 저장 
+- Android와 Github 연결
+- C.I.(Continuous Integration) : 형상관리 소스코드들을 웹상에서 자동으로 컴파일하고 관리
+
+
+===============================================안드로이드 스튜디오
+
+
+
+Control 누르고 activity_settings 누르면 레이아웃 값 세팅 가능.
+
+내가 클릭했다는 걸 알기 위해서는 
+
+리스너가 있어야함. 항상 클릭을 받기 위해 대기하고 있음
+
+이걸 구현하려면 
+
+맨 윗울에 Implement view.온클릭리스너
+
+구현 안해서 빨간줄 -> 전구모양 클릭하면 메소드 선택 뜸
+
+
+
+
+=================
+internalization
+
+
+
+
+계속 하는 내용!! 공부 좀 해놓기
+
+SuppressLint("118n")
+z
+lintOption//s{
+	disable 'HardCodedText
+
+}
+
+
+==============================================
+                                                 language : android
+
+jdk : oraklejdk8
+
+android:
+components:
+  - platform-tools #ADB(디바이 또는 에뮬레이터 통신)
+  - tools #실제 안드로이드 SDK
+  - build-tools-25.0.1 #빌드툴버전
+  - android-25
+  - extra-android-m2repository #maden repository와 통합된 라이브러리
+
+before_install:
+  - chmod +x gradlew
+
+script : ./gradlew build
+
+
+인댁스 정리
+
+원격 개발 시 편함
+
+
+ASV
+
+
+
