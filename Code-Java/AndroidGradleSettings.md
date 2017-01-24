@@ -159,15 +159,15 @@ dependencies {
 - app.iml 안에 패스워드 기억해서 입력해야함. 하고 실행 돌리면 
 
       signingConfigs {
-      release {
+        release {
           storeFile file("../keystore/keystone.jks")
           storePassword "qwertpoiuy"
           keyAlias "testKey"
           keyPassword "qwertpoiuy"
-      }
+        }
       }
     
-    - 
+  
     
 - 아래 경로로 keystone.jks 파일 생성C:\Users\Somy\AndroidStudioProjects\Settings-Saesompark(프로젝트명)\keystore\
 
