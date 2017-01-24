@@ -158,14 +158,14 @@ dependencies {
 
 - app.iml 안에 패스워드 기억해서 입력해야함. 하고 실행 돌리면 
 
-    signingConfigs {
-    release {
-        storeFile file("../keystore/keystone.jks")
-        storePassword "qwertpoiuy"
-        keyAlias "testKey"
-        keyPassword "qwertpoiuy"
-    }
-    }
+      signingConfigs {
+      release {
+          storeFile file("../keystore/keystone.jks")
+          storePassword "qwertpoiuy"
+          keyAlias "testKey"
+          keyPassword "qwertpoiuy"
+      }
+      }
     
     - 
     
@@ -175,19 +175,18 @@ dependencies {
 
 ##### 5) 한번에 여러 스토어에 배포용/개발자용 생성(app.iml)
 
-```
-productFlavors {
-    google {
-        versionName "1.0-google"
-    }
-    onestore {
-        versionName "1.0-onestore"
-    }
-    samsung {
-        versionName "1.0-samsung"
-    }
-}
-```
+      productFlavors {
+        google {
+            versionName "1.0-google"
+        }
+        onestore {
+            versionName "1.0-onestore"
+        }
+        samsung {
+            versionName "1.0-samsung"
+        }
+      }
+
 
 - Terminal에서 gradlew build 입력
 
