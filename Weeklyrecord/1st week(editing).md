@@ -1,3 +1,26 @@
+﻿
+
+1. JAVA의 주요 특징과 특정 숫자까지 모두 더하기 - BigDecimal
+
+2. 모양 출력하기. if, for문 사용
+
+3. Array와 String, 달팽이 수열
+
+4. 게시판 만들기 
+
+5. 파일 io, nio 와 데이터베이스
+
+
+참고링크
+
+https://github.com/Teddy-Hong/Java/blob/master/Theory/Weekly1.md
+
+https://github.com/Ekutz/Fast_Campus_JS/blob/ff9c9c378a4b42eb779433a0b74ee29eda39cec8/170119/README.md
+
+https://github.com/reach0328/androidschool/blob/master/Week02/Day06/java.md
+
+
+
 ## 0116 Java 기본 지식
 
 #### 1. Java의 특징
@@ -55,10 +78,10 @@ class HelloWorld {
 
 - VM을 통한 컴파일 방법은 두 가지가 있다.
 
-	1) JIT(Just In Time) : 실행시 최초 한번 클래스 파일을 기계어로 컴파일. 
-	속도 저하. 파일이 호출될 때 실행 ! 실행할 때만 있고 닫으면 번역한 내용을 저장안함
-	
-	2) AOT (Ahead Of Time) : 설치 시 최초한번 기계어로 컴파일. 안드로이드처럼 설치가 명확한 구조만 가능 용량을 많이 차지함. 번역된 걸 계속 가지고 있음.
+  1) JIT(Just In Time) : 실행시 최초 한번 클래스 파일을 기계어로 컴파일. 
+  속도 저하. 파일이 호출될 때 실행 ! 실행할 때만 있고 닫으면 번역한 내용을 저장안함
+
+  2) AOT (Ahead Of Time) : 설치 시 최초한번 기계어로 컴파일. 안드로이드처럼 설치가 명확한 구조만 가능 용량을 많이 차지함. 번역된 걸 계속 가지고 있음.
 
 => VM 컴파일이 필요한 파일을 다운로드 받으면 OS가 알아서 둘 중에 하나를 씀
 
@@ -67,10 +90,10 @@ class HelloWorld {
 - 자바랑 안드로이드가 다른 이유? 자바의 실행환경은 ART로 작동 
 
 - 클래스 로더의 구조 
-클래스 로더에 온 코드는 Method Area, Heap, Java steak 에 위치한다. 
-	Method Area - 항상 있어야 되는 내용 
-	Heap - 지금 실행되는 변수 등등이 저장되는 곳 => 가비지 컬렉터가 확인하고 지우는 곳.
-	Java steak - 함수 내에 있는 변수들이 들어가는 공간.
+  클래스 로더에 온 코드는 Method Area, Heap, Java steak 에 위치한다. 
+  Method Area - 항상 있어야 되는 내용 
+  Heap - 지금 실행되는 변수 등등이 저장되는 곳 => 가비지 컬렉터가 확인하고 지우는 곳.
+  Java steak - 함수 내에 있는 변수들이 들어가는 공간.
 
 
 ++ 수업에 나온 Tip
@@ -81,7 +104,7 @@ class HelloWorld {
 
 - 자바는 Pacage 언어..URL 패키지명을 지정함. 객체명을 구분해주기 위해서.
    패키지명이 다른 클래스가 서로 이름이 같으면.. 구분하기가 어려워짐. 
-	이름 예시 ) 패키지명. 클래스명() 변수 = new.패키지명. 클래스명();
+  이름 예시 ) 패키지명. 클래스명() 변수 = new.패키지명. 클래스명();
 
 - 변수와 상수 구별하기. 상수는 한번 정하면 못바꿈~
 
@@ -94,15 +117,15 @@ class HelloWorld {
 
 - 기본 자료형 간의 연산
 
-	정수형 : 
-	byte + byte = int
-	byte + short = int
-	char + char = int + int 
+  정수형 : 
+  byte + byte = int
+  byte + short = int
+  char + char = int + int 
 
-	실수형
-	일반적인 소수는 모두 더블로 인식
-	float
-	double
+  실수형
+  일반적인 소수는 모두 더블로 인식
+  float
+  double
 
 
 **7) 지수가수 표기법 - 부동 소수점 표기**
@@ -119,12 +142,12 @@ class HelloWorld {
 	b = 0.55 * 10E-5
 
 >지수가수 표기법으로 변경 (가수에 할당된 자리수가 7자리일 경우)
-a+b = 0.15150055*10E1 < 1.5150055 (실제 숫자) 
+>a+b = 0.15150055*10E1 < 1.5150055 (실제 숫자) 
 >여기서 이미 0.0000005의 오차가 발생한다.
 
 > 가수부가 3자리로 한정되면 아래와 같이 뒷자리가 절삭된다.
-자리가 모자라서 없애버리면서 오차 발생!
-a+b = 0.152*10
+> 자리가 모자라서 없애버리면서 오차 발생!
+> a+b = 0.152*10
 
 
 **8) 부동 소수점 연산의 한계**
@@ -137,9 +160,9 @@ a+b = 0.152*10
 **9) 지수가수 표기법 및 연산**
 
 
-  
+
 13. 자료형 변환(Type Casting)
-float 랑 연산하는 int byte long 은 모두 float 로 나옴
+    float 랑 연산하는 int byte long 은 모두 float 로 나옴
 
 14. 자료형 변환
 
@@ -152,15 +175,15 @@ float 랑 연산하는 int byte long 은 모두 float 로 나옴
 16. 산술연산자 
 
 17. ! not 연산자
-반대로
+    반대로
 
 18. ~(bit not) 연산자
-0과 1을 바꿔줌.
- 인티저. 4바이트. 너무 큰 값을 넣으면 마이너스로 값이 바뀜
+    0과 1을 바꿔줌.
+     인티저. 4바이트. 너무 큰 값을 넣으면 마이너스로 값이 바뀜
 
 19. 쉬프트 연산자 1
-변수값을 2진 비트로 변경하고 입력한 값만큼 비트를 이동시킨다. 
-값을 한번 이동할때  
+    변수값을 2진 비트로 변경하고 입력한 값만큼 비트를 이동시킨다. 
+    값을 한번 이동할때  
 
 통째로 한칸씩 옮김 
 3칸을 옮겨야 부호가 안바뀜
@@ -168,9 +191,9 @@ float 랑 연산하는 int byte long 은 모두 float 로 나옴
 20 관계연산자
 
 21. 논리연산자
-Short-Circuit 
-if &&, ||에서 앞의 값이 틀리거나 맞으면 
-뒤에거는 계산 안해도 됨
+    Short-Circuit 
+    if &&, ||에서 앞의 값이 틀리거나 맞으면 
+    뒤에거는 계산 안해도 됨
 
 22. 비트논리 연산자
 
@@ -251,14 +274,14 @@ public class HelloWorld {
 		long bigNumber = 333333333333L;
 		BigDecimal result = hello.sum2(bigNumber); 
 		System.out.println(result.toString());
-			
-				
-		
+
+
+​		
 		//hello.calculate(10000,3720);
-	
+
 		// hello.multiple(33);
 
-		
+​		
 		/*
 		 * 
 		 * 
@@ -281,21 +304,21 @@ public class HelloWorld {
 			System.out.println("end j");
 					
 		}
-		
-		
+
+
 		 * 
 		hello.loop1(1, 1000);
-			
-		
+
+
 		hello.loop();	
-		
-			
+
+​			
 		hello.condition();			
 
 		hello.sum333(1, 3333333333L);
-		
-		
-		
+
+​		
+​		
 		int r = hello.sum(1,2); 
 		//1,2는 이제 아규먼트라고 부름
 		//포인터와 같은 것. hello는 이제 r을 부름.
@@ -308,8 +331,8 @@ public class HelloWorld {
 		hello.print(hello.minus(5,10)); 
 				
 		// 곱하기 호출 후 결과값 출력
-		
-		
+
+
 		int c = hello.multiply(10,13); 
 		hello.print(c);
 				
@@ -318,10 +341,10 @@ public class HelloWorld {
 		hello.print(hello.divide(15,5)); 
 		
 		*/
-	
-	
+
+
 	}
-	
+​	
 
 	/**
 	 * 1부터 max 까지의 합을 구하는데 짝수만 더해보세요
@@ -385,24 +408,24 @@ public class HelloWorld {
 		result = result.divide(new BigDecimal(2));
 		
 		/*long count = 1;
-		
-		
+
+
 		for(count=1; count<=max ;count++){
 			BigDecimal current = new BigDecimal(count);
 			result.add(current);
 		*/
 		//result.add(new BigDecimal(count));
-		
+
 
 		return result;
-		
-		
-}
-		
-		
-	
 
-	
+​		
+}
+​		
+​		
+​	
+
+
 	/** 지불한 금액 payed에서
 	실제가격 amount 를 빼고
 	남은 거스름돈의 개수를 출력하세요.
@@ -411,15 +434,15 @@ public class HelloWorld {
 	제약조건
 	payed  = 10,000원
 	amount = 3,720원
-
+	
 	@param payed
 	@param amount
 	public
 	*/
-	
-	
+
+
 	public void calculate(int payed, int amount) {
-		
+
 		int ft = 0;
 		//잔돈 중 오천원권의 개수
 		//계산 후
@@ -430,7 +453,7 @@ public class HelloWorld {
 		int oh = 0;
 		int ff = 0;
 		int tt = 0;
-
+	
 		int rt = payed - amount;
 		
 		ft = rt/5000;
@@ -476,7 +499,7 @@ public class HelloWorld {
 
 
 	*/
-	
+
 	// 0. JavaDog : Java
 	/**
 	 * 
@@ -485,7 +508,7 @@ public class HelloWorld {
 	 * @version 1.0
 	 */
 
-	
+​	
 
 	public void print(int value) {
 		// value 값을 받아서 출력함
@@ -493,13 +516,13 @@ public class HelloWorld {
 		// print("aa") 했을 떄 출력값이 없음. 이 경우 void
 		// sum 쓰려면 string을 int로 써야 
 
-				
+
 		System.out.println(value);
-			
-		
+
+​		
 	}
 
-	
+​	
 	//public은 접근 제어자. 안쓰면 그냥 default가 들어감
 	  public int     sum       (int a, int b) {
 		  //리턴값int //함수명sum // 파라미터들.. 지역 변수가 선언된 것
@@ -511,8 +534,8 @@ public class HelloWorld {
 	 * @param b
 	 * @return
 	 * */
-		
-	
+
+
 		  int result;
 		  result = a+b;
 		  
@@ -525,11 +548,11 @@ public class HelloWorld {
 				  */		  
 		  
 	  }
-	
-	
-	
+
+
+​	
 	  public int minus (int a, int b) {
-		  
+
 		  int result=0;
 		  result = a - b;		  
 		  return result;
@@ -545,13 +568,13 @@ public class HelloWorld {
 	  }
 	  
 	  public int divide (int a, int b) {
- 		
+
  		int result = 0; //객체는 null. 값 넣을 공간을 미리 넣어주는 게 좋음. =0
  		result = a/b;	  
  		return result;
-	  
+​	  
 	  }
-  
+
 		/** 
 		 * 2. 조건문
 		 * if
@@ -591,14 +614,14 @@ public class HelloWorld {
 			  
 			  //3항 연산자			  
 			   c = (a==15) ? 100:0;
-			  
-			  
+
+
 		  } 
-		  
-	
-		  
-		  
-	
+
+​	
+​		  
+​		  
+​	
 	/**
 	 *  3. 반복문
 	 *  for
@@ -615,7 +638,7 @@ public class HelloWorld {
 		
 			int i = 0; //반복문 시작
 			int limit =100; //반복문 종료
-
+	
 			for(i=0 ; i<limit ; i++) {				
 				System.out.println("i1="+i);
 			}
@@ -628,7 +651,7 @@ public class HelloWorld {
 			
 			int a = 0;
 			int a_limit = 10;//
-			
+
 
 			int b = 0; //  내부 for 문의 시작값
 			int b_limit = 10;// 내부 for 문의 종료값
@@ -641,25 +664,25 @@ public class HelloWorld {
 			System.out.println("after a="+ a);
 			
 		  }
-			
-		
-	
-	
+
+
+​	
+​	
 		public void sum333(long w, long q) {
-		  
+
 		  long sum333 = 0;
-		  
+
 		  for (long i = w ; i <= q ; i++) {				  
 			  sum333=sum333+i;
 			}
 			  
 		  System.out.println(sum333);
-		  
-		  
+
+
 	  }
-		
+
 		public void loop1(int n, int m) {
-		
+
 			if (n<=1000 && m<=1000) {
 
 				int s = 0;		
@@ -671,23 +694,23 @@ public class HelloWorld {
 					} else {					
 						s=(s-1)/2 +1;
 					}
-					
-								
+
+
 				}
-					
+
 				System.out.println(s);	
-				
+
 			} else{
-				
+
 				System.out.println("1000을 넘는 숫자는 계산할 수 없습니다");	
-				
+
 			}
-				
+
 		}		
-		
-		
+
+​		
 		public void multiple (int n){
-			
+
 			for(int i=1 ; i <=n  ; i++){
 				for(int j =1 ; j<n+1 ;j++){
 						System.out.print(j+" X "+i+" = "+i*j+"\t");						
@@ -696,21 +719,21 @@ public class HelloWorld {
 				System.out.println();
 				
 				}
-				
-				
+
+
 			}
-			
-			
-		
-		
-		
+
+​			
+​		
+​		
+​		
 }
 
-		
-		
-		
-			
-	
-	
+
+​		
+​		
+​			
+​	
+​	
 
 
