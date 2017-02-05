@@ -143,7 +143,7 @@ URI에 있는 곳에 가서 무슨 무슨 데이터 필요한지 적는다! URI�
 
        Uri uri = Uri.parse("content://media/external/audio/albumart/" + album_id);
 
-또한  ContentResolver 객체를 만들어서 데이터를 가져오는 것도 동일하다. 단, 여기서부터 Stream을 열어서 빨대로 가져오듯이 이미지를 넣고  
+또한  ContentResolver 객체를 만들어서 데이터를 가져오는 것도 동일하다. 단, 여기서부터 Stream을 열어서 빨대로 가져오듯이 이미지를 넣으면 끗!
 
        // 2. 컨텐트 리졸버 가져오기
        ContentResolver resolver = context.getContentResolver();
@@ -154,31 +154,18 @@ URI에 있는 곳에 가서 무슨 무슨 데이터 필요한지 적는다! URI�
            Bitmap image = BitmapFactory.decodeStream(is);
            // 5. 가져온 이미지를 리턴한다
            return image;
-       }catch(FileNotFoundException e){
+       }catch(FileNotFoundException e)!{
            Logger.print(e.toString(),"로그위치");
        }
 
-###③ 심부름을 재추적해서 특정 곡에 대해서만 정보를 보기 위해 곡ID로 어디서 가져왔는지 주소를 담아줄 수 있다.
+###③ 데이터 보내기
+이제 music객체에는 드디어 곡정보 한 세트가 모두 담기게 되었다. 이걸 ArrayList로 만든 datas 에 보내면 음악 리스트에서 앨범 이미지를 확인할 수 있다.
 
-               music.uri = getMusicUri(music.id);
-
-     // 음악 id로 uri 를 가져오는 함수
-     private static Uri getMusicUri(String music_id){
-          Uri content_uri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
-         return Uri.withAppendedPath(content_uri, music_id);
-     }    
-
-###④ 하나의 파일의 정보가 모두 담긴 music객체를 보낸다
-
-               datas.add(music);
+    datas.add(music);
 
 -----------------------------------------------------------------
 
 나머지는 다음에!!
-
-
-
-
 
 ####2. 이미지를 통합해서 관리하는 라이브러리 - glide
 
