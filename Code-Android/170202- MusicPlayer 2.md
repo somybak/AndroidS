@@ -6,7 +6,7 @@
 참고자료
 [Recycler 개념도 보기](http://prezi.com/aouqpcrh87xk/?utm_campaign=share&utm_medium=copy)
 
-![리사이클뷰] (https://github.com/somybak/AndroidS/tree/master/Weeklyrecord/Dayrecord/upload(blog)/rv.png)
+![리사이클뷰](https://github.com/somybak/AndroidS/tree/master/Weeklyrecord/Dayrecord/upload(blog)/rv.png)
 
 
 
@@ -51,7 +51,7 @@ Runtime Permmition(**기존의 모바일 안에 있는** 음악목록, 전화번
 목적은 쉽지만 실제로 코딩을 하기 위해서는 이 모든 과정을 하나하나 쪼개야 하는데 그걸 마치 심부름에 비유하자면 다음과 같다.
 
 ##1) 심부름의 이름은 "load(Context context)"
-이게 불러오면 아래와 같은  작업을  진행한다.
+이걸 불러오면 아래와 같은 작업을 진행한다.
 
 ###① URI 주소를 가서 '데이터를 받아오(는 심부름을 하)겠다고  객체로 선언.
 데이터를 가져올 역할을 하는 Control Resolver 객체 생성.
@@ -135,9 +135,9 @@ URI에 있는 곳에 가서 무슨 무슨 데이터 필요한지 적는다! URI�
 
     private static Bitmap getAlbumImageBitmap(Context context, String album_id){
 
-<이 내부에 파일을 꺼내는 방법이 들어간다>
+    <이 내부에 파일을 꺼내는 방법이 들어간다>
 
-}
+    }
 
 앨범 이미지를 가져오기 위해서 일단 1-1의 ①②와 방법은 동일하다. 똑같이 URI 객체를 생성해서 혹시라도 놓치는 이미지가 없도록 직접 위치를 지정한다.
 
